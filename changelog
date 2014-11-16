@@ -1,0 +1,8 @@
+turnkey-rt-13.0 (1) turnkey; urgency=low
+
+
+  * Note: Please refer to turnkey-lapp's changelog for changes common to the
+    lapp appliance. Here we only describe changes specific to this appliance.
+
+ -- Ken Robinson <ken@robinsonshome.net>
+
