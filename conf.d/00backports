@@ -5,7 +5,7 @@
 # Code used from TurnKey Linux
 # https://raw.githubusercontent.com/turnkeylinux-apps/canvas/master/conf.d/00backports
 #
-# Installs backport packages
+# Installs backport packages needed for RT 4.0
 #
 
 fatal() {

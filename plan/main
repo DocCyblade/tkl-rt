@@ -1,5 +1,7 @@
 #include <turnkey/base>
-#include <turnkey/lapp>
+#include <turnkey/lapp>i
+
+perl			 # Needed for RT
 
 postgresql-contrib       # additional facilities for PostgreSQL
 
@@ -10,8 +12,69 @@ libapache2-mod-perl2     # Integration of perl with the Apache2 web server
 libdbd-pg-perl           # Perl DBI driver for the PostgreSQL database server
 
 
-rt4-db-postgresql	# Add this prereq first
+dbconfig-common 
+debconf
+make
 
-request-tracker4	# Request Tracker 4.0 package
+libapache-session-perl
+libcache-simple-timedexpiry-perl
+libcgi-emulate-psgi-perl
+libcgi-psgi-perl 
+libclass-accessor-perl 
+libclass-returnvalue-perl 
+libconvert-color-perl
+libcss-squish-perl 
+libdata-ical-perl
+libdatetime-locale-perl 
+libdatetime-perl
+libdbi-perl
+libdbix-searchbuilder-perl
+libdevel-globaldestruction-perl
+libdevel-stacktrace-perl
+libemail-address-perl
+libfcgi-procmanager-perl
+libfile-sharedir-perl
+libgd-graph-perl
+libgd-text-perl
+libgnupg-interface-perl
+libgraphviz-perl
+libhtml-format-perl
+libhtml-mason-perl 
+libhtml-mason-psgihandler-perl 
+libhtml-quoted-perl
+libhtml-scrubber-perl
+libhtml-tree-perl
+libipc-run-perl
+libipc-run3-perl
+libjson-perl
+liblist-moreutils-perl
+liblocale-maketext-fuzzy-perl
+liblocale-maketext-lexicon-perl
+liblog-dispatch-perl
+libmailtools-perl
+libmime-tools-perl 
+libmime-types-perl
+libmodule-versions-report-perl
+libnet-cidr-perl
+libperlio-eol-perl
+libregexp-common-net-cidr-perl
+libregexp-common-perl
+libregexp-ipv6-perl
+libtext-autoformat-perl
+libtext-password-pronounceable-perl
+libtext-quoted-perl 
+libtext-template-perl 
+libtext-wikiformat-perl
+libtext-wrapper-perl
+libtime-modules-perl
+libtimedate-perl
+libtree-simple-perl
+libuniversal-require-perl
+liburi-perl 
+libxml-rss-perl
+libxml-simple-perl
+libterm-readkey-perl
+libapache-dbi-perl
+
 
 
