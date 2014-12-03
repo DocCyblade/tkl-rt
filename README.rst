@@ -1,4 +1,5 @@
-RT: Request Tracker 
+
+RT: Request Tracker 4.0 (work in progress)
 =============================
 
 RT is a battle-tested issue tracking system which thousands of
@@ -19,10 +20,12 @@ This appliance includes all the standard features in `TurnKey LAPP`:
 - The *postgres* user is trusted when connecting over local unix sockets
   (convenience).
 
+Plus Request Tracker 4.0 installed from wheezy backport packages
+
+
 Credentials *(passwords set at first boot)*
 -------------------------------------------
 
 -  Webmin, SSH: username **root**
 -  PostgreSQL, phpPgAdmin: username **postgres**
 
-.. _TurnKey LAPP: http://www.turnkeylinux.org/lapp
