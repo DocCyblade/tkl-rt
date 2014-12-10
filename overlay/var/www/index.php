@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Style-Type" content="text/css">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
 
-        <title>TurnKey LAPP</title>
+        <title>TurnKey Community - Request Tracker 4.0</title>
         
         <link rel="stylesheet" href="css/ui.tabs.css" type="text/css" media="print, projection, screen">
         <link rel="stylesheet" href="css/base.css" type="text/css">
@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <h1>TurnKey LAPP</h1>
+        <h1>TurnKey RT</h1>
         
         <div id="container-1">
             <ul>
@@ -46,7 +46,10 @@
                         $_SERVER{'HTTP_HOST'}; ?>:12322"><img
                         src="images/phppgadmin.png"/>PHPPgAdmin</a>
                     </div>
-                    <div></div>
+                    <div>
+                        $_SERVER{'HTTP_HOST'}; ?>/rt"><img
+                        src="images/rt.png"/>Request Tracker</a>
+                    </div>
                     <div></div>
 
                     <h2>Resources and references</h2>
@@ -60,9 +63,14 @@
                           (to disable: a2dismod status)
                         </li>
                         <li><a
-                        href="http://www.turnkeylinux.org/lapp">
-                        TurnKey LAPP release notes</a></li>
-                    </ul>
+                        href="http://bestpractical.com/docs/rt/4.0/">
+                        RT: Request Tracker 4.0 Docs </a></li>
+                   
+                        <li><a
+                        href="https://github.com/DocCyblade/TKL-RT40/wiki/TKL_RT40_Release_Notes">
+                        Turn Key Community - Request Tracker 4.0 Release Notes</a></li>
+ 
+                   </ul>
 
                 </div>
             </div>
