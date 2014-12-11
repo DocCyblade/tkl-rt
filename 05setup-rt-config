@@ -1,0 +1,9 @@
+#!/bin/bash -ex
+
+# Run the site config command to create the RT_SiteConfig.pm file
+
+
+
+update-rt-siteconfig-4
+
+

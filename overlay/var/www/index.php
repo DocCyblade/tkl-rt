@@ -47,8 +47,9 @@
                         src="images/phppgadmin.png"/>PHPPgAdmin</a>
                     </div>
                     <div>
+			<a href="http://<?php print
                         $_SERVER{'HTTP_HOST'}; ?>/rt"><img
-                        src="images/rt.png"/>Request Tracker</a>
+                        src="images/shell.png"/>Request Tracker 4.0</a>
                     </div>
                     <div></div>
 
