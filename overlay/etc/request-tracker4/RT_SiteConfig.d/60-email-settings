@@ -1,0 +1,4 @@
+
+Set($SMTPServer, "localhost");
+
+Set($SMTPFrom, "rt@localhost");

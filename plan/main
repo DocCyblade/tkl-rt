@@ -1,0 +1,6 @@
+#include <turnkey/base>
+#include <turnkey/lapp>
+
+perl			 # Needed for RT
+
+libapache2-mod-perl2     # Integration of perl with the Apache2 web server
