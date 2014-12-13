@@ -28,4 +28,3 @@ Credentials *(passwords set at first boot)*
 
 -  Webmin, SSH: username **root**
 -  PostgreSQL, phpPgAdmin: username **postgres**
-
