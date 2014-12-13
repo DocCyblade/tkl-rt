@@ -1,0 +1,14 @@
+# THE BASICS:
+
+Set($rtname, 'rt.tkldev');
+Set($Organization, 'tkldev');
+
+Set($CorrespondAddress , 'rt@tkldev');
+Set($CommentAddress , 'rt-comment@tkldev');
+
+# THE WEBSERVER:
+
+Set($WebPath , "/rt");
+Set($WebBaseURL , "http://localhost");
+Set($WebPort, 80);
+
