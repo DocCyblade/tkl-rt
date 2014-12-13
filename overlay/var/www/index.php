@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <h1>TurnKey RT</h1>
+        <h1>TurnKey Request Tracker 4.0</h1>
         
         <div id="container-1">
             <ul>
@@ -31,6 +31,11 @@
 
             <div id="cp">
                 <div class="fragment-content">
+                    <div>
+                        <a href="http://<?php print
+                        $_SERVER{'HTTP_HOST'}; ?>/rt"><img
+                        src="images/shell.png"/>Request Tracker 4.0</a>
+                    </div>                    
                     <div>
                         <a href="https://<?php print
                         $_SERVER{'HTTP_HOST'}; ?>:12320"><img
@@ -46,16 +51,23 @@
                         $_SERVER{'HTTP_HOST'}; ?>:12322"><img
                         src="images/phppgadmin.png"/>PHPPgAdmin</a>
                     </div>
-                    <div>
-			<a href="http://<?php print
-                        $_SERVER{'HTTP_HOST'}; ?>/rt"><img
-                        src="images/shell.png"/>Request Tracker 4.0</a>
-                    </div>
                     <div></div>
 
                     <h2>Resources and references</h2>
                     <ul>
                         <li>
+                          <a href="https://github.com/DocCyblade/TKL-RT40/wiki/TKL_RT40_Release_Notes">
+                           Turn Key Community - Request Tracker 4.0 Release Notes
+                          </a>
+                        </li>
+ 
+                        <li>
+                          <a href="http://bestpractical.com/docs/rt/4.0/">
+                            RT: Request Tracker 4.0 Docs 
+                          </a>
+                        </li>
+
+                       <li>
                           <a href="/phpinfo.php">Apache PHP information</a>
                           (to disable: rm /var/www/phpinfo.php)
                         </li>
@@ -63,13 +75,6 @@
                           <a href="/server-status">Apache server status</a>
                           (to disable: a2dismod status)
                         </li>
-                        <li><a
-                        href="http://bestpractical.com/docs/rt/4.0/">
-                        RT: Request Tracker 4.0 Docs </a></li>
-                   
-                        <li><a
-                        href="https://github.com/DocCyblade/TKL-RT40/wiki/TKL_RT40_Release_Notes">
-                        Turn Key Community - Request Tracker 4.0 Release Notes</a></li>
  
                    </ul>
 
