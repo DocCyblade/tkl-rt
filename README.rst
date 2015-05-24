@@ -1,5 +1,5 @@
 
-RT: Request Tracker 4.0 (work in progress)
+RT: Request Tracker 4.2 (work in progress)
 =============================
 
 RT is a battle-tested issue tracking system which thousands of
@@ -20,7 +20,7 @@ This appliance includes all the standard features in `TurnKey LAPP`:
 - The *postgres* user is trusted when connecting over local unix sockets
   (convenience).
 
-Plus Request Tracker 4.0 installed from wheezy backport packages
+Plus Request Tracker 4.2 installed from jessie packages
 
 
 Credentials *(passwords set at first boot)*

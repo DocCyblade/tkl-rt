@@ -1,4 +1,4 @@
-RT 4.0:     http://$ipaddr/rt
+Request Tracker:     http://$ipaddr/rt
 Web Menu:   http://$ipaddr
 Web shell:  https://$ipaddr:12320
 Webmin:     https://$ipaddr:12321
