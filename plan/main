@@ -1,6 +1,12 @@
 #include <turnkey/base>
 #include <turnkey/lapp>
 
-perl			 # Needed for RT
+perl			        # Needed for RT
 
-libapache2-mod-perl2     # Integration of perl with the Apache2 web server
+libapache2-mod-perl2            # Integration of perl with the Apache2 web server
+
+libhtml-rewriteattributes-perl  # Needed for perl
+rt4-clients                     # mail gateway and command-line interface for request-tracker4
+rt4-apache2                     # Apache 2 specific files for request-tracker4
+rt4-db-postgresql               # PostgreSQL database backend for request-tracker4
+request-tracker4                # extensible trouble-ticket tracking system 4.2
