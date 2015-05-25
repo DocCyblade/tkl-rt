@@ -15,5 +15,5 @@ Set($DatabasePassword , 'turnkey');
 # the temp root password, just need to make sure it's 
 # changed on startup
 
-Set ($DatabaseAdmin , 'rtuser'); 
+Set ($DatabaseAdmin , 'rt_user'); 
 
