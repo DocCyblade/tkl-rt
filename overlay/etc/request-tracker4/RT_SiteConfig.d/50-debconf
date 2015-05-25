@@ -1,14 +1,13 @@
 # THE BASICS:
 
-Set($rtname, 'rt.tkldev');
-Set($Organization, 'tkldev');
+Set($rtname, 'rt.turnkey');
+Set($Organization, 'turnkeylinux');
 
-Set($CorrespondAddress , 'rt@tkldev');
-Set($CommentAddress , 'rt-comment@tkldev');
+Set($CorrespondAddress , 'admin@example.com');
+Set($CommentAddress , 'rt-comment@example.com');
 
 # THE WEBSERVER:
 
-Set($WebPath , "/rt");
-Set($WebBaseURL , "http://localhost");
+Set($WebPath , "/");
+Set($WebBaseURL , "http://example.com");
 Set($WebPort, 80);
-
