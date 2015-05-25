@@ -7,7 +7,7 @@ Set($DatabasePort, '');
 
 Set($DatabaseName , 'rt_db');
 
-Set($DatabaseUser , 'rtuser');
+Set($DatabaseUser , 'rt_user');
 Set($DatabasePassword , 'turnkey'); 
 
 # TODO: Need to set this to the root account?
