@@ -1,12 +1,15 @@
 #!/bin/sh -ex
 
-DB_USER=rt_user
+DB_USER=rtuser
 DB_PASS=$(mcookie)
+
+a2dissite 000-default.conf
+a2ensite rt4
 
 # Start database server
 service postgresql start
 
-# add rt user
+# add rtuser
 psql <<EOF
 \x
 CREATE ROLE "%DB_USER" CREATEDB LOGIN PASSWORD "$DB_PASS" CREATEROLE;
