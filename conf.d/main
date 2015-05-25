@@ -1,0 +1,19 @@
+#!/bin/sh -ex
+
+DB_USER=rt_user
+DB_PASS=$(mcookie)
+
+# Start database server
+service postgresql start
+
+# add rt user
+psql <<EOF
+\x
+CREATE ROLE "%DB_USER" CREATEDB LOGIN PASSWORD "$DB_PASS" CREATEROLE;
+EOF
+
+#Create the database
+rt-setup-database --action init --dba-password "$DB_PASS"
+
+# Stop the database
+service postgresql stop
