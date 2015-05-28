@@ -1,0 +1,43 @@
+#!/bin/sh -ex
+
+DB_NAME=rt_db
+DB_USER=rt_user
+#DB_PASS=$(mcookie)
+DB_PASS=turnkey
+
+#hacky workaround for sed statements later
+DatabaseName='$DatabaseName'
+DatabaseUser='$DatabaseUser'
+DatabasePassword='$DatabasePassword'
+
+# disable default and enable tweaked rt site
+a2dissite 000-default.conf
+a2ensite rt4
+
+# Start database server
+service postgresql start
+
+# create database
+su postgres -c "createuser --no-superuser --createdb --no-createrole $DB_USER"
+su postgres -c "createdb --owner $DB_USER -EUTF8 $DB_NAME"
+su postgres -c "psql postgres" << EOF
+alter user $DB_USER with encrypted password '$DB_PASS';
+EOF
+
+#Create the database
+rt-setup-database --action init --dba-password "$DB_PASS"
+
+# adjust the conf file
+CONF=/etc/request-tracker4/RT_SiteConfig.d/51-dbconfig-common
+sed -i "/DatabaseName/c\Set($DatabaseName , '$DB_NAME');" $CONF 
+sed -i "/DatabaseUser/c\Set($DatabaseUser , '$DB_USER');" $CONF
+sed -i "/DatabasePassword/c\Set($DatabasePassword , '$DB_PASS');" $CONF
+
+# Stop the database
+service postgresql stop
+
+# Set up log file
+mkdir -p /var/log/request-tracker4
+touch /var/log/request-tracker4/rt.log
+chown -R root:www-data /var/log/request-tracker4
+
